@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sadasdasd</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="script.js"></script>
+</head>
+<body>
+  <nav class="block">
+    <div class="flex-row">
+        <img class="logo" src="notecube.png" alt="LOGO" />
+        <h3 class="heading-logo">NoteCube</h3>
+        <a href="index.html" class="link">Home 🏠</a>
+        <a href="note.html" class="link">Your Note📒 </a>
+        <a class="link">About📄</a>
+    </div>
+  </nav>
+  <br>
+  <div class="flex">
+    <h1 class="heading-note" id="noteNameDisplay"></h1>
+  </div>
+  <br>
+
+    <style>
+    </style>
+  <div class="flex-row-centered"> 
+    <div class="flex-column-centered">
+        <div class="sub-heading-gadget">
+            <h2>Gadgets ⚒️</h2>
+        </div>
+        <div class="button-barrier">
+            <div class="flex-column-gadget">
+                <button class="button-gadget" onclick="saveNote()">Save 📁</button>
+                <button class="button-gadget" onclick="nameNote()">Rename Note 📄</button>
+                <button class="button-gadget" onclick="newNote()">New Note ➕</button>
+                <input class="font-size" id="font-size" type="number" placeholder="Font Size" onchange="fontSize()"></input>
+            </div>
+        </div>
+    </div>
+    <div class="flex-column-centered-note">
+        <div class="sub-heading-note">
+            <h2>Note 📒</h2>
+        </div>
+        <textarea class="text-box" id="text-box" placeholder="Write your note here! ✏️"></textarea>
+    </div>
+  </div>
+  <div class="flex">
+    <div class="sub-heading-link">
+        <h2>Link Clipboard 📋</h2>
+    </div>
+
+    <div class="link-box"></div>
+  </div>
+</body>
+</html>
